@@ -44,6 +44,15 @@ footer {
     background-color: blue;
 }
 
+footer .flex-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* footer p, h1, h2{
+    background-color: #ffffff;
+} */
+
 /*mobile phone*/
 @media (max-width: 1000px) {
     .grid-container {
