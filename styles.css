@@ -78,6 +78,11 @@ footer .flex-container {
 @media screen and (min-width: 1000px) {
     .grid-container {
         display: grid;
+
+        /* "center" photos */
+        position: relative;
+        left: 25%;
+
         grid-template-areas: 
         'grid-photo  grid-photo2 grid-photo3'
         'grid-photo4 grid-photo5 grid-photo6'
