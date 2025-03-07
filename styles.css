@@ -9,6 +9,9 @@ nav {
     background-color: blue;
 }
 
+/**
+ * add space to site left and right
+ */
 .main-content {
     max-width: 90%;
     margin: auto auto;
@@ -41,17 +44,13 @@ footer {
     padding-top: 1em;
     text-align: center;
     border: 3px solid black;
-    background-color: blue;
+    background-color: gray;
 }
 
 footer .flex-container {
     display: flex;
     justify-content: space-around;
 }
-
-/* footer p, h1, h2{
-    background-color: #ffffff;
-} */
 
 /*mobile phone*/
 @media (max-width: 1000px) {
