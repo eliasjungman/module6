@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+nav {
+    text-align: center;
+    background-color: blue;
+}
+
+.main-content {
+    max-width: 90%;
+    margin: auto auto;
+}
+
+header a, footer a {
+    display: inline-block;
+    font-size: 36px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    background-color: #ffffff;
+    padding: 14px 16px;
+}
+
+header a:hover, footer a:hover{
+    background-color: red;
+}
+
+h1 {
+    text-align: center;
+}
+
+.active {
+    background-color: yellow;
+    text-decoration: underline;
+}
+
+footer {
+    padding-top: 1em;
+    text-align: center;
+    border: 3px solid black;
+    background-color: blue;
+}
+
+/*mobile phone*/
+@media (max-width: 1000px) {
+    .grid-container {
+        display: grid;
+        grid-template-areas: 
+        'grid-photo  grid-photo2'
+        'grid-photo3 grid-photo4'
+        'grid-photo5 grid-photo6'
+        ;
+        grid-gap: 20px;
+        /* width: 100%; */
+    }
+    img {
+        width: 100%;
+        height: auto; /* photos goes to footer if height is 100%. I dont understand why this happens... */
+    }
+
+    footer .flex-container{
+        flex-direction: column;
+    }
+}
+    
+/*computer screen*/
+@media screen and (min-width: 1000px) {
+    .grid-container {
+        display: grid;
+        grid-template-areas: 
+        'grid-photo  grid-photo2 grid-photo3'
+        'grid-photo4 grid-photo5 grid-photo6'
+        ;
+        grid-gap: 20px;
+        width: 50%;
+    }
+    img {
+        width: 100%;
+        height: 100%; /* photos didn't go to footer in this situatio when 100% */
+    }
+}
